@@ -1,0 +1,72 @@
+[
+    {
+        "code": "GR001",
+        "name": "Gale Reef Adventure",
+        "length": "7 days",
+        "start": "2024-06-15",
+        "resort": "Reefside Resort",
+        "perPerson": 2500,
+        "image": "images/reef1.jpg",
+        "description": "Dive into the crystal-clear waters and explore the vibrant coral reef ecosystems."
+    },
+    {
+        "code": "DR002",
+        "name": "Dawson’s Reef Dive",
+        "length": "5 days",
+        "start": "2024-07-01",
+        "resort": "Oceanview Lodge",
+        "perPerson": 1800,
+        "image": "images/reef2.jpg",
+        "description": "Experience the serenity of Dawson's Reef, a hidden gem for divers."
+    },
+    {
+        "code": "CR003",
+        "name": "Claire’s Reef Excursion",
+        "length": "10 days",
+        "start": "2024-08-10",
+        "resort": "Seascape Inn",
+        "perPerson": 3200,
+        "image": "images/reef3.jpg",
+        "description": "A once-in-a-lifetime opportunity to explore Claire's Reef, known for its vibrant marine life."
+    },
+    {
+        "code": "BR004",
+        "name": "Blue Lagoon Expedition",
+        "length": "4 days",
+        "start": "2024-09-05",
+        "resort": "Lagoon Bay Resort",
+        "perPerson": 1500,
+        "image": "images/reef4.jpg",
+        "description": "Unwind at the serene Blue Lagoon with its turquoise waters and lush surroundings."
+    },
+    {
+        "code": "TR005",
+        "name": "Tropical Island Retreat",
+        "length": "6 days",
+        "start": "2024-07-20",
+        "resort": "Palm Paradise Resort",
+        "perPerson": 2100,
+        "image": "images/reef5.jpg",
+        "description": "Relax and recharge on a tropical island with pristine beaches and stunning sunsets."
+    },
+    {
+        "code": "AR006",
+        "name": "Amazon Rainforest Adventure",
+        "length": "8 days",
+        "start": "2024-08-01",
+        "resort": "Eco Jungle Lodge",
+        "perPerson": 3000,
+        "image": "images/reef6.jpg",
+        "description": "Explore the lush Amazon rainforest and discover its incredible biodiversity."
+    },
+    {
+        "code": "CP007",
+        "name": "Coral Paradise Getaway",
+        "length": "9 days",
+        "start": "2024-06-25",
+        "resort": "Paradise Reef Hotel",
+        "perPerson": 2700,
+        "image": "images/reef7.jpg",
+        "description": "Immerse yourself in the vibrant coral reefs and relax in a luxurious seaside resort."
+    }
+]

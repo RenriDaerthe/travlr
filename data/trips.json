@@ -1,0 +1,72 @@
+[
+    {
+        "code": "GR001",
+        "name": "Gale Reef Adventure",
+        "length": "7 days",
+        "start": "2024-06-15",
+        "resort": "Reefside Resort",
+        "perPerson": "2500",
+        "image": "images/reef1.jpg",
+        "description": "Dive into the crystal-clear waters and explore the vibrant coral reef ecosystems."
+    },
+    {
+        "code": "DR002",
+        "name": "Dawson’s Reef Discovery",
+        "length": "5 days",
+        "start": "2024-07-10",
+        "resort": "Seaside Inn",
+        "perPerson": "1800",
+        "image": "images/reef2.jpg",
+        "description": "Experience an unforgettable journey to Florida’s iconic reef system."
+    },
+    {
+        "code": "CR003",
+        "name": "Claire’s Reef Exploration",
+        "length": "10 days",
+        "start": "2024-08-01",
+        "resort": "Blue Lagoon Retreat",
+        "perPerson": "3000",
+        "image": "images/reef3.jpg",
+        "description": "Explore the stunning underwater beauty of the Maldives and its unique marine life."
+    },
+    {
+        "code": "SR004",
+        "name": "Santorini Coastal Adventure",
+        "length": "6 days",
+        "start": "2024-05-20",
+        "resort": "Aegean Bliss Resort",
+        "perPerson": "2200",
+        "image": "images/santorini.jpg",
+        "description": "Discover the stunning cliffs and turquoise waters of the Aegean Sea."
+    },
+    {
+        "code": "BB005",
+        "name": "Bora Bora Lagoon Escape",
+        "length": "8 days",
+        "start": "2024-09-12",
+        "resort": "Lagoon Paradise Resort",
+        "perPerson": "3500",
+        "image": "images/borabora.jpg",
+        "description": "Relax and snorkel in the breathtaking lagoons of Bora Bora."
+    },
+    {
+        "code": "MO006",
+        "name": "Maui Ocean Retreat",
+        "length": "7 days",
+        "start": "2024-10-05",
+        "resort": "Maui Beachside Villas",
+        "perPerson": "2000",
+        "image": "images/maui.jpg",
+        "description": "Enjoy the serene beaches and unique underwater wildlife of Hawaii."
+    },
+    {
+        "code": "IN007",
+        "name": "Iceland Northern Lights Adventure",
+        "length": "5 days",
+        "start": "2024-11-01",
+        "resort": "Aurora Borealis Inn",
+        "perPerson": "2800",
+        "image": "images/iceland.jpg",
+        "description": "Witness the stunning northern lights and explore icy waters in Iceland."
+    }
+]

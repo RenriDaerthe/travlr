@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Travel - Travlr Getaways</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div id="background">
+        <div id="page">
+            {{> header }}
+            <div id="contents">
+                <div class="box">
+                    <div>
+                        <div class="body">
+                            <h1>Travel</h1>
+                            <ul id="sites">
+                                <!-- Gibberish Placeholder -->
+                                <li>
+                                    <a href="/travel"><img src="images/reef1.jpg" alt="Img"></a>
+                                    <h2><a href="/travel">Gale Reef</a></h2>
+                                    <p>
+                                        Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis.
+                                    </p>
+                                    <p>
+                                        Sed consequat libero ut turpis venenatis ut aliquam risus semper. Etiam convallis mi vel risus pretium sodales. Etiam nunc lorem ullamcorper vitae laoreet.
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="/travel"><img src="images/reef2.jpg" alt="Img"></a>
+                                    <h2><a href="/travel">Dawson’s Reef</a></h2>
+                                    <p>
+                                        Integer magna leo, posuere et dignissim vitae, porttitor at odio. Pellentesque a metus nec magna placerat volutpat. Nunc nisi mi, elementum sit amet aliquet quis, tristique quis nisl. Curabitur odio lacus, blandit ut hendrerit.
+                                    </p>
+                                    <p>
+                                        Vulputate, vulputate at est. Morbi aliquet viverra metus eu consectetur. In lorem dui, elementum sit amet convallis ac, tincidunt vel sapien.
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="/travel"><img src="images/reef3.jpg" alt="Img"></a>
+                                    <h2><a href="/travel">Claire’s Reef</a></h2>
+                                    <p>
+                                        Donec sed felis risus. Nulla facilisi. Donec a orci tellus, et auctor odio. Fusce ac orci nibh, quis semper arcu. Cras orci neque, euismod et accumsan ac, sagittis molestie lorem. Proin odio sapien, elementum at tempor non.
+                                    </p>
+                                    <p>
+                                        Vulputate eget libero. In hac habitasse platea dictumst. Integer purus justo, egestas eu consectetur eu, cursus in tortor. Quisque nec nunc ac mi ultrices iaculis.
+                                    </p>
+                                </li>
+                                <!-- Dynamic Content from API -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{> footer }}
+        </div>
+    </div>
+    <script>
+        // Fetch trips from the API and populate the page dynamically
+        async function fetchTrips() {
+            try {
+                const response = await fetch('/api/trips'); // API endpoint
+                const trips = await response.json();
+                const sitesElement = document.getElementById('sites');
+                sitesElement.innerHTML += trips.map(trip => `
+                    <li>
+                        <a href="/travel/${trip.code}"><img src="${trip.image}" alt="Img"></a>
+                        <h2><a href="/travel/${trip.code}">${trip.name}</a></h2>
+                        <p>${trip.description}</p>
+                        <p><strong>Length:</strong> ${trip.length}</p>
+                        <p><strong>Cost:</strong> $${trip.perPerson}</p>
+                    </li>
+                `).join('');
+            } catch (err) {
+                console.error('Error fetching trips:', err);
+            }
+        }
+
+        // Call the function to fetch and display trips
+        fetchTrips();
+    </script>
+</body>
+</html>
